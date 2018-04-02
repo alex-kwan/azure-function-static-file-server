@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "TestApp": {
+            "matchCondition": {
+                "route": "{*path}"
+            },
+            "backendUri": "%WEBSITE_AND_CODE%&fileName={path}"
+        }
+    }
+}
